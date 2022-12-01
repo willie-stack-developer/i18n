@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/i18n.js"></script>
+</head>
+<body>
+
+<!-- thymeleaf -->
+<h1 th:text="#{welcome.message}"></h1>
+
+<h2>[[#{welcome.message}]]</h2>
+
+<!--<span th:text="#{language.change}"></span>:-->
+<select id="locales">
+    <option value=""><span th:text="#{language.change}"></span></option>
+    <option value="en" th:text="#{lang.eng}"></option>
+    <option value="de" th:text="#{lang.de}"></option>
+    <option value="ph" th:text="#{lang.ph}"></option>
+</select>
+
+
+</body>
+</html>
